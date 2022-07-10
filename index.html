@@ -11,6 +11,8 @@
   <!-- GOOGLE FONTS -->
   <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
 
+  <!--ANIMATE CSS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <!-- CUSTOM CSS -->
   <link rel="stylesheet" href="styles/main.css">
   
@@ -37,9 +39,9 @@
       </nav>
     </div>
   </header> 
-    <div id="showcase">
+    <div id="showcase no-x-scroll">
         <div class="container">
-          <div class="showcase-content">
+          <div class="showcase-content  wow animate__fadeInDown">
             <div class="category category-sports">Sports</div>
             <h1 class="l-heading">Some Sports Article</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur molestiae labore quaerat. Corporis, doloribus eveniet! Officia necessitatibus error veritatis exercitationem vel, excepturi hic at mollitia. Earum expedita ab cupiditate fugit!</p>
@@ -47,12 +49,12 @@
           </div>
         </div>
       </div>
-      <div id="home-articles" class="bg-light py-2">
+      <div id="home-articles" class="bg-light py-2 no-x-scroll">
         <div class="container">
           <h2>Editor's Pick</h2>
     
           <div class="articles-container">
-            <article class="card card-grid">
+            <article class="card card-grid wow animate__fadeInLeft">
               <img src="images/ent1.jpg" alt="">
               <div>
                 <div class="category category-ent">Entertainment</div>
@@ -61,7 +63,7 @@
               </div>
             </article>
     
-            <article class="card bg-dark">
+            <article class="card bg-dark wow animate__fadeInRight ">
               <div>
                 <div class="category category-sports">Sports</div>
                 <h3>Lorem ipsum dolor sit.</h3>
@@ -69,7 +71,7 @@
               </div>
             </article>
     
-            <article class="card">
+            <article class="card wow animate__fadeInLeft">
               <img src="images/tech1.jpg" alt="">
               <div>
                 <div class="category category-tech">Technology</div>
@@ -78,7 +80,7 @@
               </div>
             </article>
     
-            <article class="card">
+            <article class="card wow animate__fadeInUp ">
               <img src="images/sports1.jpg" alt="">
               <div>
                 <div class="category category-sports">Sports</div>
@@ -87,7 +89,7 @@
               </div>
             </article>
     
-            <article class="card">
+            <article class="card wow animate__fadeInRight ">
               <img src="images/tech2.jpg" alt="">
               <div>
                 <div class="category category-tech">Technology</div>
@@ -96,14 +98,14 @@
               </div>
             </article>
     
-            <article class="card bg-primary">
+            <article class="card bg-primary wow animate__fadeInLeft">
               <div>
                 <div class="category category-sports">Sports</div>
                 <h3>Lorem ipsum dolor sit.</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure natus laboriosam aut ullam sit, dicta aliquid nostrum facere odio blanditiis nisi vel soluta deserunt cupiditate obcaecati accusantium? Dignissimos, perferendis corporis!</p>
               </div>
             </article>
-            <article class="card card-grid">
+            <article class="card card-grid wow animate__fadeInRight ">
               <div>
                 <div class="category category-ent">Entertainment</div>
                 <h3>Lorem ipsum dolor sit.</h3>
@@ -114,13 +116,13 @@
           </div>
         </div>
       </div>
-      <footer id="main-footer" class="py-2 bg-dark">
-        <div class="container">
-          <div>
+      <footer id="main-footer" class="py-2 bg-dark no-x-scroll">
+        <div class="container ">
+          <div class=" wow animate__fadeInLeft">
             <img src="./images/logo_light.png" alt="Air News Logo" class="logo">
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, eos!</p>
           </div>
-          <div>
+          <div class=" wow animate__fadeInLeft ">
             <h3>Email Newsletter</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, necessitatibus.</p>
             <form>
@@ -128,7 +130,7 @@
               <input type="submit" class="btn btn-primary btn-block">
             </form>
           </div>
-          <div>
+          <div class=" wow animate__fadeInRight">
             <h3>Site Links</h3>
             <ul class="list">
               <li><a href="#">Help &amp; Support</a></li>
@@ -137,7 +139,7 @@
               <li><a href="#">Contact Us</a></li>
             </ul>
           </div>
-          <div>
+          <div class=" wow animate__fadeInRight ">
             <h3>Join Our Club</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             <a href="#" class="btn btn-secondary">Join Now</a>
@@ -147,5 +149,14 @@
           </div>
         </div>
       </footer>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script>
+        let wow=new WOW({
+          animateClass:'animate__animated'
+        });
+        wow.init();
+      </script>
+
 </body>
 </html>
