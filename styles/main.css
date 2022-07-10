@@ -281,3 +281,25 @@ ul.list li a:hover {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+
+/*ARTICLES STYLING */
+
+.articles-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 1rem;
+}
+
+.card-grid{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 1rem;
+}
+
+#home-articles .card-grid:first-child{
+  grid-column: 1/span 2;
+}
+
+#home-articles .card-grid:last-child{
+  grid-column: 2/span 2;
+}
