@@ -194,6 +194,9 @@ ul.list li a:hover {
   cursor: pointer;
 }
 
+
+
+/**Navbar*/
 #navbar{
   background-color: #fff;
   position: sticky;
@@ -201,8 +204,6 @@ ul.list li a:hover {
   left: 0;
   z-index: 99999;
 }
-
-/**Navbar*/
 #navbar .container{
   display: grid;
   grid-template-columns: 3fr 1fr 2fr;
@@ -224,7 +225,7 @@ ul.list li a:hover {
   font-weight: bold;
 }
 
-#navbar ul li a:active{
+#navbar ul li a.active{
   background-color: var(--primary-color);
   color: white;
 }
@@ -302,4 +303,31 @@ ul.list li a:hover {
 
 #home-articles .card-grid:last-child{
   grid-column: 2/span 2;
+}
+
+/*Footer */
+
+#main-footer .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+}
+
+#main-footer .container .grid-full {
+  grid-column: 1/span 4;
+}
+.grid-full p {
+  background: #444;
+  padding: .4rem;
+  font-size: .8rem;
+  text-align: center;
+}
+.hearts {
+  color: red;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  padding: .55rem;
+  margin-bottom: .5rem;
 }
