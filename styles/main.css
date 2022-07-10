@@ -39,7 +39,7 @@ body {
   background: var(--light-color);
   font-family: 'Lato', sans-serif;
   line-height: 1.5;
-  min-height: 1200px;
+  /* min-height: 1200px; */
 }
 
 p {
@@ -334,4 +334,21 @@ ul.list li a:hover {
 
 .no-x-scroll{
   overflow-x:hidden;
+}
+
+
+/*Artcile page*/
+.article-container{
+  display: grid;
+  grid-template-columns:2fr 1fr;
+  grid-gap: 1rem;
+}
+
+.mb-2{
+  margin-bottom: 2rem;
+}
+
+.about-content h1,
+.article-content h1{
+  font-size: 3rem;
 }
