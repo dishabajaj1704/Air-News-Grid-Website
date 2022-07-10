@@ -265,7 +265,7 @@ ul.list li a:hover {
   min-height: 50vh;
 }
 #showcase:before {
-  background: url('../images/featured.jpg') no-repeat center center;
+  background: url('../images/football.jpg') no-repeat center center;
   background-size: cover;
   content: '';
   position: absolute;
